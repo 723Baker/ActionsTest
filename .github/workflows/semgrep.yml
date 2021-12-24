@@ -5,9 +5,8 @@ on:
     - master
     paths:
     - .github/workflows/semgrep.yml
-    - .semgrepignore
   schedule:
-    cron: 0 0 * * *
+  - cron: '''0 0 * * 0'''
 name: Semgrep
 jobs:
   semgrep:
